@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  color: #c0c0c0;
+  /* Light grey color for general text */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #008000;
+  /* Green header */
+  color: #ffffff;
+  /* White color for header text */
+  padding: 10px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #c0c0c0;
+  /* Light grey color for content text */
+}
+
+:root {
+  --primary-color: #c0c0c0;
+  /* Light grey as primary color */
+  --secondary-color: #808080;
+  /* Dark grey as secondary color */
+  --background-color: #222222;
+  /* Dark background color */
+  --text-color: #c0c0c0;
+  /* Light grey as text color */
+}
+
+.footer {
+  margin-top: auto;
+}
+

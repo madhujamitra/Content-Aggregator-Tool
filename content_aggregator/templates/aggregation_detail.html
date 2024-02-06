@@ -1,0 +1,14 @@
+<!-- aggregation_detail.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}{{ aggregation.title }}{% endblock %}
+
+{% block content %}
+    <div class="aggregation">
+        <h1>{{ aggregation.title }}</h1>
+        <p>{{ aggregation.content }}</p>
+        <p>Published on {{ aggregation.pub_date }}</p>
+        <p>URL: {{ url }}</p>
+    </div>
+{% endblock %}

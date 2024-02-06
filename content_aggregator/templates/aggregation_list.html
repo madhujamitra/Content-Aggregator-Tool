@@ -1,0 +1,16 @@
+<!-- aggregation_list.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}aggregation List{% endblock %}
+
+{% block content %}
+    <h1>aggregation List</h1>
+    <ul>
+        {% for aggregation in aggregations %}
+            <li><a href="{% url 'aggregation_detail' aggregation.id %}">{{ aggregation.title }}</a></li>
+        {% empty %}
+            <li>No aggregations found.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
